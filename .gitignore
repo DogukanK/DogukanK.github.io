@@ -1,0 +1,11 @@
+.DS_Store
+.vscode
+.env
+.env.local
+.env.development
+.env.production
+# Hugo
+public/
+
+# Node
+node_modules/

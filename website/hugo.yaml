@@ -1,0 +1,86 @@
+baseURL: 'https://dogukank.github.io/'
+title: "/home/dogukank"
+languageCode: 'en-us'
+theme: "PaperMod"
+pagination:
+  pagerSize: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: "production"
+  title: "/home/dogukank"
+  #description:
+  #keywords: ["Blog", ""]
+  author: "Me"
+  DateFormat: "January 2, 2006"
+  defaultTheme: "auto"
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  showbacktotop: true
+
+  socialIcons:
+  - name: github
+    url: "https://github.com/DogukanK"
+  - name: linkedin
+    url: "https://www.linkedin.com/in/dogukan-kurnaz/"
+
+  profileMode:
+    enabled: true
+    title: "Doğukan Kurnaz"
+    subtitle: "Security Engineer | Tech Enthusiast"
+    imageUrl: "/images/profile.jpg"
+    imageTitle: "my profile picture"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+    - name: Blog
+      url: "/blog"
+    - name: About Me
+      url: "/about"
+
+  homeInfoParams:
+    Title: "Hi there 👋"
+
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+  keys: [ "title", "permalink", "summary", "content" ]
+
+menu:
+  main:
+  - identifier: blog
+    name: Blog
+    url: /blog/
+    weight: 10
+  - identifier: about
+    name: About Me
+    url: /about/
+    weight: 20
